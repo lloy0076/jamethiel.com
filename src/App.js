@@ -6,7 +6,7 @@ class App extends Component {
         super(props);
 
         this.toggle = this.toggle.bind(this);
-        this.state  = {
+        this.state = {
             isOpen: false
         };
     }
@@ -42,13 +42,15 @@ class App extends Component {
                     </Row>
 
                     <Row className={"justify-content-center"}>
-                        <Col className={"col-10 justify-content-center"}>
+                        <Col className={"col-12 justify-content-center"}>
                             <h1 style={{"text-align": "center"}}>About David</h1>
                         </Col>
                     </Row>
 
                     <Row className={"justify-content-center"}>
-                        <Col className={"col-sm-10 col-md-4"} style={{"text-align": "justify"}}>
+                        <Col className={"col-12 col-md-5"} style={{"text-align": "justify"}}>
+                            <h3>Personal</h3>
+
                             <p>
                                 David Lloyd lives with his wife, five cats and the cat "that is not ours but we've fed
                                 for the past four years" in Canton, New York. He dreams of building a straw bale house
@@ -56,30 +58,36 @@ class App extends Component {
                             </p>
 
                             <p>
-                                He emigrated to the USA in 2016 and attends Grace Episcopal Church in Canton where he is
-                                the current webmaster and often helps at community suppers as well as during weekly
-                                services.
+                                He emigrated to the USA in 2016 and attends <a
+                                href={"https://www.gracechurchcanton.org/"} target={"_blank"}>Grace Episcopal
+                                Church</a> in Canton where he is the current webmaster and often helps at community
+                                suppers as well as during weekly services. David is a strong believer in the good in
+                                all and the use of truth to overcome all obstacles.
                             </p>
                         </Col>
 
-                        <Col className={"col-sm-10 col-md-2"} style={{"text-align": "center"}}>
-                            <img src={"coa-white.jpg"} alt={"Per Veritatem Vis"} width={180} height={180}
+                        <Col className={"col-12 col-md-2"} style={{"text-align": "center"}}>
+                            <img src={"coa-white.jpg"} alt={"Per Veritatem Vis"} width={"100%"}
                                  className={"center-block"}/>
                         </Col>
 
-                        <Col className={"col-sm-10 col-md-4"} style={{"text-align": "justify"}}>
+                        <Col className={"col-12 col-md-5"} style={{"text-align": "justify"}}>
+                            <h3>Professional</h3>
+
                             <p>
-                                David is a remote backend API and web-developer located in Canton, New York. He works on
-                                backend APIs - both writing the API and integrating third-party APIs - in PHP, PERL,
-                                Python or Java but also has experiencing constructing web front end experiences.
+                                David is a remote backend API and web-developer located in Canton, New York. He has
+                                experience developing custom APIs in PHP, Java, C#, JavaScript and other modern
+                                languages as well as integrating with many third party APIs.
                             </p>
 
                             <p>
-                                David is also an experienced system administrator, specialising in GNU/Linux, having
-                                some experience with tools such as Ansible, Puppet, Vagrant, as well as with container
-                                technology (i.e. Docker). In his spare time, he likes to learn about the current
-                                full-stack libraries - such as ReactJS or Vue - and keeping up to date with the latest
-                                CSS and styling tools.
+                                In addition, David is an experienced system administrator, specialising in GNU/Linux,
+                                having experience with tools such as Ansible, Puppet and Vagrant. In his spare time, he
+                                likes to learn about the latest programming and web-development libraries and practices.
+                            </p>
+
+                            <p>
+                                His Github profile is <a href={"https://github.com/lloy0076"} target={"_blank"}>here</a>.
                             </p>
                         </Col>
                     </Row>
