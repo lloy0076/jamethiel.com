@@ -1,5 +1,20 @@
-import React, {Component} from 'react';
-import {Col, Collapse, Container, Nav, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink, Row} from 'reactstrap';
+/**
+ *  Copyright 2020 David S. Lloyd.
+ *
+ *  Licensed under the Apache License, Version 2.0 (the "License");
+ *  you may not use this file except in compliance with the License.
+ *  You may obtain a copy of the License at
+ *
+ *    http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *  Unless required by applicable law or agreed to in writing, software
+ *  distributed under the License is distributed on an "AS IS" BASIS,
+ *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *  See the License for the specific language governing permissions and
+ *  limitations under the License.
+ */
+import React, { Component } from 'react';
+import { Col, Collapse, Container, Nav, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink, Row } from 'reactstrap';
 
 class App extends Component {
     constructor(props) {
@@ -43,12 +58,13 @@ class App extends Component {
 
                     <Row className={"justify-content-center"}>
                         <Col className={"col-12 justify-content-center"}>
-                            <h1 style={{"text-align": "center"}}>About David</h1>
+                            <h1 style={{ "text-align": "center" }}>About David</h1>
+                            <hr/>
                         </Col>
                     </Row>
 
                     <Row className={"justify-content-center"}>
-                        <Col className={"col-12 col-md-5"} style={{"text-align": "justify"}}>
+                        <Col className={"col-12 col-md-5"} style={{ "text-align": "justify" }}>
                             <h3>Personal</h3>
 
                             <p>
@@ -66,12 +82,12 @@ class App extends Component {
                             </p>
                         </Col>
 
-                        <Col className={"col-12 col-md-2"} style={{"text-align": "center"}}>
+                        <Col className={"col-12 col-md-2"} style={{ "text-align": "center" }}>
                             <img src={"coa-white.jpg"} alt={"Per Veritatem Vis"} width={"100%"}
                                  className={"center-block"}/>
                         </Col>
 
-                        <Col className={"col-12 col-md-5"} style={{"text-align": "justify"}}>
+                        <Col className={"col-12 col-md-5"} style={{ "text-align": "justify" }}>
                             <h3>Professional</h3>
 
                             <p>
@@ -89,6 +105,13 @@ class App extends Component {
                             <p>
                                 His Github profile is <a href={"https://github.com/lloy0076"} target={"_blank"}>here</a>.
                             </p>
+                        </Col>
+                    </Row>
+
+                    <Row className={"justify-content-center"}>
+                        <Col className={"col-12 justify-content-center"}>
+                            <hr/>
+                            <span style={{ fontSize: 'xx-small' }}>Copyright &copy; 2020. David Lloyd.</span>
                         </Col>
                     </Row>
                 </Container>
